@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding:7% 15% 0 15%;
+	font-family: 'spartan', sans-serif;
+	background:url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+	background-repeat: no-repeat,no-repeat;
+	background-position: left top, right bottom;
+	background-size: 500px, 1000px;
+}
+.container-1{
+	display: flex;
+	justify-content: space-between;
+}
+.box-1{
+	width: 35%;
+	float: left;
+}
+h1{
+	color: hsl(300, 43%, 22%) ;
+	padding-bottom: 1%;
+}
+.box-1 p{
+	font-size: 11px;
+	line-height: 1rem;
+	color: hsl(303, 10%, 53%);
+}
+.box-2{
+	width: 47%;
+}
+.rating-1, .rating-2, .rating-3{
+	padding:1.5% 1% 1.5% 3%;
+	margin: 3% 0;
+	display: flex;
+	width:76%;
+	align-items: center;
+	background:hsl(300, 24%, 96%);
+	border-radius: 5%;
+	font-size: 11px;
+}
+.rating-1 img, .rating-2 img, .rating-3 img{
+	padding:1.5% 1%;
+	height: 11px;
+}
+.rate{
+	font-weight: bolder;
+	padding-left:10%;
+	color: hsl(300, 43%, 22%);
+}
+.rating-2{
+	margin-left: 10%;
+}
+.rating-3{
+	margin-left: 20%;
+}
+.container-2{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10%;
+}
+.review-1, .review-2, .review-3{
+	position: relative;
+	width: 26%;
+	padding: 3%;
+	background: hsl(300, 43%, 22%);
+	border-radius: 5%;
+	color:hsl(0, 0%, 100%);
+	font-size:11px;
+}
+.review-2{
+	top:1rem;
+}
+.review-3{
+	top: 2rem;
+}
+.intro-1, .intro-2, .intro-3{
+	display: flex;
+	align-items: center;
+	padding-bottom: 7%;
+}
+.intro-1 img, .intro-2 img, .intro-3 img{
+	border-radius: 50%;
+	height: 3rem;
+}
+.intro-1 p, .intro-2 p, .intro-3 p{
+	padding-left: 15%;
+}
+.pink{
+	font-weight: normal;
+	color:  hsl(333, 80%, 67%);
+}
+.review-1 p, .review-2 p, .review-3 p{
+	line-height: 1.6;
+	padding-top: 3%;
+}
+.name{
+	font-weight: bold;
+}
+footer{
+	padding-top: 7%;
+	text-align: center;
+	font-size: 11px;
+}
+.color{
+	color: #9933FF;
+}
+@media(max-width:425px ){
+	body{
+		background: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+		background-repeat: no-repeat, no-repeat;
+		background-position: left top, right bottom;
+		background-size:270px; 
+	}
+	.container-1{
+		padding-top: 10%;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.box-1{
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	h1{
+		font-size: 24px;
+		padding-bottom: 2%;
+	}
+	.box-1 p{
+		font-size: 9px;
+		line-height: 1.8;
+	}
+	.box-2{
+		padding-top: 7%;
+		width: 100%;
+	}
+	.rating-1, .rating-2, .rating-3{
+		width: 100%;
+		display: block;
+		padding:3% 0;
+		border-radius: 5.5%;
+		margin: 4% 0;
+		font-size: 9px;
+	}
+	.rating-1 img, .rating-2 img, .rating-3 img{
+		height: 9px;
+	}
+	.container-2{
+		padding-top: 10%;
+		padding-bottom: 10%; 
+		display: block;
+	}
+	.review-1, .review-2, .review-3{
+		width: 80%;
+		margin: 0 auto;
+		font-size: 8.5px;
+		padding: 10%;
+	}
+	footer{
+		padding-top: 10%;
+		font-size: 9px;
+	}
+}
